@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+
+int escolha, palpite;
+    
+printf("escolha um numero de 1 a 1000:");
+
+scanf("%d",&escolha);
+    while(palpite != escolha)
+printf("tenta adivinhar o numero:");
+scanf("%d",&palpite);
+
+    if(palpite==escolha) {
+
+       printf("Ganhaste!\n");
+    } else if(escolha>palpite) {
+        printf("o numero e maior");
+        
+    } else {
+        printf("o numero e menor");
+    }
+
+}
